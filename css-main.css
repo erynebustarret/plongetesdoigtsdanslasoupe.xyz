@@ -1,0 +1,469 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    animation: grow 70s linear 0s infinite;
+    transition:background 3s ease-in-out;
+    position: relative;
+}
+
+
+.hidden {
+  display: none; /* Cache les images au début */
+}
+
+.hidden-image-to-show {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;  /* Rendre l'image transparente au départ */
+    visibility: hidden;  /* Rendre l'image invisible */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.image-to-show:not(.hidden) {
+    opacity: 1; /* Image visible */
+}
+
+ /* Styles pour le bouton du point d'interrogation */
+.question-merk-btn {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    line-height: 50px;  /* Centrer le texte */
+    font-size: 60px;
+    text-decoration: none;  /* Retirer le soulignement du lien */
+    cursor: pointer;
+}
+.question-merk {
+    font-size: 62px;  /* Taille du point d'interrogation */
+}
+.question-merk-btn, .question-merk {
+  all: unset;  /* Réinitialise tous les styles précédemment hérités */
+}
+
+    /* Conteneur pour la ligne */
+ .full-width-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* Centrer la ligne avec le symbole */
+    margin: 20px 0;
+    width: 100%;
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid white;  /* Ligne blanche */
+    margin: 0; 
+}
+
+
+.cercle {
+  width: 100px;        /* Largeur du cercle */
+  height: 100px;       /* Hauteur du cercle */
+  border: 1px solid white; 
+  border-radius: 50%; 
+  position: absolute;
+  margin-top: -350px;  
+  margin-left: 1300px; 
+}
+
+.hache {
+    width: 450px;
+    height: 20px;
+    display: flex;
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center;
+
+}
+.image-hache {
+    width: 70%;  /* L'image prend 80% de la largeur du conteneur */
+    height: auto;
+    transform: rotate(30deg);
+    margin-top: 620px;
+    margin-left: 1500px;
+}
+
+.cowboy {
+    width: 450px;
+    height: 20px;
+    display: flex;
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center;
+
+}
+.image-cowboy {
+    width: 65%;  /* L'image prend 80% de la largeur du conteneur */
+    height: auto;
+    margin-top: 720px;
+    margin-left: 700px;
+}
+
+.arbalette {
+    width: 450px;
+    height: 20px;
+    display: flex;
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center;
+
+}
+.image-arbalette {
+    width: 70%;  /* L'image prend 80% de la largeur du conteneur */
+    height: auto;
+    transform: rotate(45deg);
+    margin-top: 720px;
+    margin-left: 350px;
+}
+.lapin{
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center;
+}
+.image-lapin {
+    width: 50%;  /* L'image prend 80% de la largeur du conteneur */
+    height: auto;
+    margin-top: 1500px;
+    margin-left: 1870px;
+    transform: rotate(190deg);
+}
+.louche {
+    width: 500px;
+    height: 20px;
+    display: flex;
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center;
+}
+.image-louche {
+    width: 50%;  /* L'image prend 80% de la largeur du conteneur */
+    height: auto;
+    transform: rotate(50deg);
+    margin-top: 620px;
+    margin-left: 450px;
+}
+.DeadGirls {
+    width: 300px;
+    height: 20px;
+    display: flex;
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center;
+}
+.image-DeadGirls {
+    width: 50%;  /* L'image prend 80% de la largeur du conteneur */
+    height: auto;
+    margin-top: 720px;
+    margin-left: 1770px;
+    margin-right: -5px;
+}
+
+.cornelius {
+    width: 300px;
+    height: 20px;
+    display: flex;
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center;
+}
+.image-cornelius {
+    width: 50%;  /* L'image prend 80% de la largeur du conteneur */
+    height: auto;
+    margin-top: 350px;
+    margin-left: 670px;
+}
+
+.pigeon {
+    width: 300px;
+    height: 20px;
+    display: flex;
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center;
+}
+.image-pigeon {
+    width: 50%;  /* L'image prend 80% de la largeur du conteneur */
+    height: auto;
+    margin-top: 400px;
+    margin-left: 2300px;
+}
+.main-verte {
+    width: 650px;
+    height: 50px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.image-main-verte {
+    width: 50%;  /* L'image prend 80% de la largeur du conteneur */
+    height: auto;
+    margin-top: 700px;
+    margin-left: 600px;
+}
+
+.carpe {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center;
+}
+.image-carpe {
+    width: 50%;  
+    height: auto;
+    margin-top: 1100px;
+    margin-left: 2050px;
+    transform: rotate(90deg);
+}
+
+    /*arrangements text*/
+.vertical-text {
+    writing-mode: vertical-rl;
+    font-size: 10px; 
+    margin-top: 950px;
+    margin-left: -45px;  /* Ajuste la marge à gauche du texte */
+    color: white;  /* Couleur du texte */
+}
+a {
+    font-size: 10px;
+    text-decoration: none;
+    color: white;
+}
+.domino{
+    font-size: 30px;
+    color:pink;
+    margin-top: 1500px;
+    display: inline-block; /* S'assurer que l'élément est en ligne avec l'image */
+    margin-left: 10px; /* Un petit espace à gauche du texte */
+    white-space: nowrap;
+}
+
+/* conteneurS */
+.egg {
+    width: 350px;
+    height: 10px;
+    display: flex;
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center;
+}
+.image-egg {
+    width: 70%;  
+    height: auto;
+    margin-left: 60px;
+}
+.image-ressort {
+    position: absolute;
+    margin-top: -100px;
+}
+.tiroir {
+    width: 300px;
+    height: 10px;
+    display: flex;
+
+}
+.image-tiroir {
+    width: 20%;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 100px;
+    transform: perspective(2%);
+}
+/* fin des conteneurS */
+
+          /*! explanation-BOX #ccc; */
+
+
+.explanation-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.question-mark {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.explanation-content{
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    background-color: transparent;
+    padding: 15px;
+    width: 400px;
+    border: 20px white;
+    color: rgb(133, 133, 133);
+    font-size: 14px;
+    text-align: justify;
+    text-decoration: none;
+}
+
+ul li{
+    color: white;
+    font-size: 13px;
+}
+h1,p{
+    font-size: 13px;
+    margin-top: 0px;
+    text-decoration: none;
+    text-align: right;
+}
+
+h2{
+    font-size: 13px;
+    font-style: thin;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 500px;
+}
+
+.explanation-box.open .explanation-content {
+    display: block;
+}
+
+
+/*construction spirale*/
+
+#spiral-container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+
+/* Animation pour créer l'effet de spirale */
+#spiral-container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-70%,10%);
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+
+.spiral-image {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.image-visible {
+    transition: opacity 0.3s ease;  /* Transition fluide */
+}
+
+.image-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;  /* Rendre l'image transparente au départ */
+    visibility: hidden;  /* Rendre l'image invisible */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.spiral-image:hover .image-visible {
+    opacity: 0;  /* Rendre l'image principale transparente au survol */
+}
+
+.spiral-image:hover .image-hidden {
+    opacity: 1;  /* Rendre l'image cachée visible au survol */
+    visibility: visible;  /* Rendre l'image visible */
+}
+
+/* Spirale : Positionnement des images */
+#spiral-container .spiral-image:nth-child(1) {
+    transform: rotate(19deg) translateX(145px) rotate(-60deg) scale(0.65);
+    background-image: url('image1.jpg');
+}
+#spiral-container .spiral-image:nth-child(2) {
+    transform: rotate(30deg) translateX(90px) rotate(190deg) scale(0.4);
+    background-image: url('image2.jpg');
+}
+#spiral-container .spiral-image:nth-child(3) {
+    transform: rotate(60deg) translateX(250px) rotate(-80deg) scale(0.5);
+    background-image: url('image3.jpg');
+}
+#spiral-container .spiral-image:nth-child(4) {
+    transform: rotate(90deg) translateX(210px) rotate(-90deg) scale(0.2);
+    background-image: url('image4.jpg');
+}
+#spiral-container .spiral-image:nth-child(5) {
+    transform: rotate(95deg) translateX(170px) translateY(-15px) rotate(-100deg) scale(1.2);
+    background-image: url('image1.jpg');
+}
+#spiral-container .spiral-image:nth-child(6) {
+    transform: rotate(150deg) translateX(160px) rotate(-150deg) scale(0.8);
+    background-image: url('image2.jpg');
+}
+#spiral-container .spiral-image:nth-child(7) {
+    transform: rotate(-40deg) translateX(-350px) translateY(-60px) rotate(-180deg) scale(1.2);
+    background-image: url('image3.jpg');
+}
+#spiral-container .spiral-image:nth-child(8) {
+    transform: rotate(210deg) translateX(190px) rotate(-210deg);
+    background-image: url('image4.jpg');
+}
+#spiral-container .spiral-image:nth-child(9) {
+    transform: rotate(240deg) translateX(210px) rotate(-240deg);
+    background-image: url('image1.jpg');
+}
+#spiral-container .spiral-image:nth-child(10) {
+    transform: rotate(0deg) translateX(30px) translateY(-300px) rotate(-270deg) scale(0.1);
+    background-image: url('image2.jpg');
+}
+
+
+    /* image 3D - mouvement et déplacement */
+
+
+
+.cheval-3D {
+    perspective: 1000px; /* Donne l'effet de profondeur 3D */
+    width: 1500px;
+    height: auto;
+}
+
+.image-3d {
+    width: 70%;
+    transition: transform 1s; /* Transition fluide */
+    transform-style: preserve-3d; /* Permet à l'image d'être manipulée en 3D */
+    cursor: pointer; /* Change le curseur au survol */
+    position: absolute; /* Pour permettre le déplacement */
+    margin-top: 100px;  
+    margin-left: 200px; 
+}
+
+/* Effet de rotation sur l'image */
+.image-3d:hover {
+    transform: rotateY(360deg); /* Rotation autour de l'axe Y */
+}
+
+
+
+
