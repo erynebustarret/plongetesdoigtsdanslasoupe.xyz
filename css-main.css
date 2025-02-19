@@ -333,7 +333,11 @@ h2{
     margin-top: 200px;
     margin-left: 500px;
 }
-
+h3{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
 .explanation-box.open .explanation-content {
     display: block;
 }
