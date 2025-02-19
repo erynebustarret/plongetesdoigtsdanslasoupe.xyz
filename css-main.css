@@ -430,11 +430,11 @@ h3{
     background-image: url('image3.jpg');
 }
 #spiral-container .spiral-image:nth-child(8) {
-    transform: rotate(210deg) translateX(190px) rotate(-210deg);
+    transform: rotate(210deg) translateX(190px) rotate(-210deg) scale(0.1);
     background-image: url('image4.jpg');
 }
 #spiral-container .spiral-image:nth-child(9) {
-    transform: rotate(240deg) translateX(210px) rotate(-240deg);
+    transform: rotate(240deg) translateX(210px) rotate(-240deg) scale(0.1);
     background-image: url('image1.jpg');
 }
 #spiral-container .spiral-image:nth-child(10) {
