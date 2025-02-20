@@ -402,7 +402,7 @@ h3{
 
 /* Spirale : Positionnement des images */
 #spiral-container .spiral-image:nth-child(1) {
-    transform: rotate(19deg) translateX(145px) rotate(-60deg) scale(0.65);
+    transform: rotate(19deg) translateX(145px) rotate(-60deg) scale(0.2);
     background-image: url('image1.jpg');
 }
 #spiral-container .spiral-image:nth-child(2) {
@@ -418,7 +418,7 @@ h3{
     background-image: url('image4.jpg');
 }
 #spiral-container .spiral-image:nth-child(5) {
-    transform: rotate(95deg) translateX(170px) translateY(-15px) rotate(-100deg) scale(1.2);
+    transform: rotate(95deg) translateX(170px) translateY(-15px) rotate(-100deg) scale(0.5);
     background-image: url('image1.jpg');
 }
 #spiral-container .spiral-image:nth-child(6) {
@@ -426,7 +426,7 @@ h3{
     background-image: url('image2.jpg');
 }
 #spiral-container .spiral-image:nth-child(7) {
-    transform: rotate(-40deg) translateX(-350px) translateY(-60px) rotate(-180deg) scale(1.2);
+    transform: rotate(-40deg) translateX(-350px) translateY(-60px) rotate(-180deg) scale(0.5);
     background-image: url('image3.jpg');
 }
 #spiral-container .spiral-image:nth-child(8) {
