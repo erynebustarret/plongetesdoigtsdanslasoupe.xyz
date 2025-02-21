@@ -402,7 +402,7 @@ h3{
 
 /* Spirale : Positionnement des images */
 #spiral-container .spiral-image:nth-child(1) {
-    transform: rotate(19deg) translateX(145px) rotate(-60deg) scale(0.2);
+    transform: rotate(19deg) translateX(145px) rotate(-60deg) scale(0.15);
     background-image: url('image1.jpg');
 }
 #spiral-container .spiral-image:nth-child(2) {
@@ -410,7 +410,7 @@ h3{
     background-image: url('image2.jpg');
 }
 #spiral-container .spiral-image:nth-child(3) {
-    transform: rotate(60deg) translateX(250px) rotate(-80deg) scale(0.5);
+    transform: rotate(60deg) translateX(250px) rotate(-80deg) scale(0.2);!!!
     background-image: url('image3.jpg');
 }
 #spiral-container .spiral-image:nth-child(4) {
@@ -418,7 +418,7 @@ h3{
     background-image: url('image4.jpg');
 }
 #spiral-container .spiral-image:nth-child(5) {
-    transform: rotate(95deg) translateX(170px) translateY(-15px) rotate(-100deg) scale(0.5);
+    transform: rotate(95deg) translateX(170px) translateY(-15px) rotate(-100deg) scale(0.2);
     background-image: url('image1.jpg');
 }
 #spiral-container .spiral-image:nth-child(6) {
@@ -426,15 +426,15 @@ h3{
     background-image: url('image2.jpg');
 }
 #spiral-container .spiral-image:nth-child(7) {
-    transform: rotate(-40deg) translateX(-350px) translateY(-60px) rotate(-180deg) scale(0.5);
+    transform: rotate(-40deg) translateX(-350px) translateY(-60px) rotate(-180deg) scale(0.2);
     background-image: url('image3.jpg');
 }
 #spiral-container .spiral-image:nth-child(8) {
-    transform: rotate(210deg) translateX(190px) rotate(-210deg) scale(0.1);
+    transform: rotate(210deg) translateX(190px) rotate(-210deg) scale(0.35);
     background-image: url('image4.jpg');
 }
 #spiral-container .spiral-image:nth-child(9) {
-    transform: rotate(240deg) translateX(210px) rotate(-240deg) scale(0.1);
+    transform: rotate(240deg) translateX(210px) rotate(-240deg) scale(0.25);
     background-image: url('image1.jpg');
 }
 #spiral-container .spiral-image:nth-child(10) {
