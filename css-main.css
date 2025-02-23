@@ -15,6 +15,26 @@ body {
     position: relative;
 }
 
+/* Pour les écrans de bureau (plus larges que 1024px) */
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Pour les tablettes (entre 768px et 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Pour les smartphones (moins de 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
 
 .hidden {
   display: none; /* Cache les images au début */
