@@ -93,7 +93,7 @@ body {
   border-radius: 50%; 
   position: absolute;
   margin-top: -35rem;  
-  margin-left: 130rem; 
+  margin-left: 100rem; 
 }
 
 .hache {
@@ -289,9 +289,8 @@ a {
 .image-tiroir {
     width: 20%;
     position: absolute;
-    margin-top: -20rem;
+    margin-top: -10rem;
     margin-left: 10rem;
-    transform: perspective(2%);
 }
 /* fin des conteneurS */
 
