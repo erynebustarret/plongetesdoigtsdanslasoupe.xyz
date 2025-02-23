@@ -36,17 +36,17 @@ body {
  /* Styles pour le bouton du point d'interrogation */
 .question-merk-btn {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 5rem;
+    height: 5rem;
     color: white;
     text-align: center;
-    line-height: 50px;  /* Centrer le texte */
-    font-size: 60px;
+    line-height: 5rem;  /* Centrer le texte */
+    font-size: 6rem;
     text-decoration: none;  /* Retirer le soulignement du lien */
     cursor: pointer;
 }
 .question-merk {
-    font-size: 62px;  /* Taille du point d'interrogation */
+    font-size: 6.2rem;  /* Taille du point d'interrogation */
 }
 .question-merk-btn, .question-merk {
   all: unset;  /* Réinitialise tous les styles précédemment hérités */
