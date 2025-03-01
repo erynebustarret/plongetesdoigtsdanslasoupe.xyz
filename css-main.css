@@ -487,6 +487,29 @@ h3{
     transform: rotateY(360deg); /* Rotation autour de l'axe Y */
 }
 
+/* text lettre déoulante */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#text-container {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #333;
+  white-space: nowrap;
+}
+
+#text {
+  display: inline-block;
+  overflow: hidden;
+  width: 0;
+}
 
 
 
