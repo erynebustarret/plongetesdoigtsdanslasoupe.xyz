@@ -58,3 +58,19 @@ image.addEventListener('mouseout', () => {
     image.style.transition = 'transform 1s';  // Rotation 3D fluide
     image.style.transform = `rotateY(0deg)`;  // Retour à l'état initial sans affecter la position
 });
+
+/* deroulé text */
+
+const text = "Ceci est un exemple de texte qui se dévoile lettre par lettre.";
+const textElement = document.getElementById('text');
+let index = 0;
+
+function typeText() {
+  if (index < text.length) {
+    textElement.innerHTML += text[index];
+    index++;
+    setTimeout(typeText, 100);  // L'intervalle entre chaque lettre
+  }
+}
+
+window.onload = typeText;
