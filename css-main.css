@@ -18,6 +18,8 @@ body {
 /* Pour les écrans de bureau (plus larges que 1024px) */
 @media (min-width: 1024px) {
     body {
+        height: 50%;
+        width: 50%;
         font-size: 18px;
     }
 }
@@ -429,7 +431,7 @@ h3{
     background-image: url('image2.jpg');
 }
 #spiral-container .spiral-image:nth-child(3) {
-    transform: rotate(60deg) translateX(25rem) rotate(-80deg) scale(0.2);!!!
+    transform: rotate(60deg) translateX(25rem) translateY(10rem) rotate(-80deg) scale(0.2);
     background-image: url('image3.jpg');
 }
 #spiral-container .spiral-image:nth-child(4) {
