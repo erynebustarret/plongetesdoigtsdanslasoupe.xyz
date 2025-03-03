@@ -423,11 +423,11 @@ h3{
 
 /* Spirale : Positionnement des images */
 #spiral-container .spiral-image:nth-child(1) {
-    transform: rotate(19deg) translateX(14.5rem) rotate(-60deg) scale(0.15);
+    transform: rotate(19deg) translateX(14.5rem) translateY(10rem) rotate(-60deg) scale(0.15);
     background-image: url('image1.jpg');
 }
 #spiral-container .spiral-image:nth-child(2) {
-    transform: rotate(30deg) translateX(9rem) rotate(190deg) scale(0.4);
+    transform: rotate(30deg) translateX(9rem) translateY(10rem) rotate(190deg) scale(0.4);
     background-image: url('image2.jpg');
 }
 #spiral-container .spiral-image:nth-child(3) {
@@ -435,31 +435,31 @@ h3{
     background-image: url('image3.jpg');
 }
 #spiral-container .spiral-image:nth-child(4) {
-    transform: rotate(90deg) translateX(21rem) rotate(-90deg) scale(0.2);
+    transform: rotate(90deg) translateX(21rem) translateY(10rem) rotate(-90deg) scale(0.2);
     background-image: url('image4.jpg');
 }
 #spiral-container .spiral-image:nth-child(5) {
-    transform: rotate(95deg) translateX(17rem) translateY(-15px) rotate(-100deg) scale(0.2);
+    transform: rotate(95deg) translateX(17rem) translateY(10rem) translateY(-15px) rotate(-100deg) scale(0.2);
     background-image: url('image1.jpg');
 }
 #spiral-container .spiral-image:nth-child(6) {
-    transform: rotate(150deg) translateX(16rem) rotate(-150deg) scale(0.8);
+    transform: rotate(150deg) translateX(16rem) translateY(10rem) rotate(-150deg) scale(0.8);
     background-image: url('image2.jpg');
 }
 #spiral-container .spiral-image:nth-child(7) {
-    transform: rotate(-40deg) translateX(-35rem) translateY(-60px) rotate(-180deg) scale(0.2);
+    transform: rotate(-40deg) translateX(-35rem)  translateY(-50rem) rotate(-180deg) scale(0.2);
     background-image: url('image3.jpg');
 }
 #spiral-container .spiral-image:nth-child(8) {
-    transform: rotate(210deg) translateX(19rem) rotate(-210deg) scale(0.35);
+    transform: rotate(210deg) translateX(19rem) translateY(10rem) rotate(-210deg) scale(0.35);
     background-image: url('image4.jpg');
 }
 #spiral-container .spiral-image:nth-child(9) {
-    transform: rotate(240deg) translateX(21rem) rotate(-240deg) scale(0.25);
+    transform: rotate(240deg) translateX(21rem) translateY(10rem) rotate(-240deg) scale(0.25);
     background-image: url('image1.jpg');
 }
 #spiral-container .spiral-image:nth-child(10) {
-    transform: rotate(0deg) translateX(3rem) translateY(-30rem) rotate(-270deg) scale(0.1);
+    transform: rotate(0deg) translateX(3rem) translateY(-20rem) rotate(-270deg) scale(0.1);
     background-image: url('image2.jpg');
 }
 
