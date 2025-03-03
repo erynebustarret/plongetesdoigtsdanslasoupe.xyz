@@ -368,8 +368,8 @@ h3{
 
 #spiral-container {
     position: relative;
-    width: 60rem;
-    height: 60rem;
+    width: 50rem;
+    height: 50rem;
     display: flex;
     justify-content: center;
     align-items: center;
