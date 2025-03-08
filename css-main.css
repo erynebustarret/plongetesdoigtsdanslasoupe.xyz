@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     height: 100%;
     width: 100%;
@@ -7,39 +11,36 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
+    display: flex; 
     justify-content: center;
     align-items: center;
     background-position: center;
     animation: grow 70s linear 0s infinite;
-    transition:background 3s ease-in-out;
+    transition: background 3s ease-in-out;
     position: relative;
 }
 
-/* Pour les écrans de bureau (plus larges que 1024px) */
+/* Media query */
 @media only screen and (min-width: 400px) {
     body {
-        height: 50%;
-        width: 50%;
-        font-size: 18px;
+        font-size: 2rem;
     }
 }
 
-/* Pour les tablettes (entre 768px et 1024px) */
 @media only screen and (max-width: 700px) {
     body {
-        font-size: 16px;
+        font-size: 1.8rem;
     }
 }
 
-/* Pour les smartphones (moins de 768px) */
 @media only screen and (max-width: 1000px) {
     body {
-        font-size: 14px;
+        font-size: 1.5rem;
     }
 }
 
 .hidden {
-  display: none; /* Cache les images au début */
+  display: none;
 }
 
 .hidden-image-to-show {
@@ -62,9 +63,9 @@ body {
     height: 5rem;
     color: white;
     text-align: center;
-    line-height: 5rem;  /* Centrer le texte */
-    font-size: 6rem;
-    text-decoration: none;  /* Retirer le soulignement du lien */
+    line-height: 5rem;
+    font-size: 3rem; /* Utilisation de rem pour la taille de la police */
+    text-decoration: none;
     cursor: pointer;
 }
 .question-merk {
@@ -87,25 +88,126 @@ body {
     margin: 0; 
 }
 
+.image-hache,
+.image-cowboy,
+.image-arbalette,
+.image-lapin,
+.image-louche,
+.image-DeadGirls,
+.image-cornelius,
+.image-pigeon,
+.image-main-verte,
+.image-carpe {
+    width: 50%;
+    height: auto;
+    max-width: 100%; /* S'assure que l'image ne dépasse jamais 100% de sa largeur */
+}
 
 .cercle {
-  width: 10rem;        /* Largeur du cercle */
-  height: 10rem;       /* Hauteur du cercle */
-  border: 0.1rem solid white; 
-  border-radius: 50%; 
-  position: absolute;
-  margin-top: -35rem;  
-  margin-left: 80rem; 
+    width: 10rem;
+    height: 10rem;
+    border: 0.1rem solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 10vh;  /* Utilisation de vh pour qu'il soit proportionnel à la taille de l'écran */
+    left: 50%;
+    transform: translateX(-50%);  /* Centrer horizontalement */
 }
+
 
 .hache {
     width: 45rem;
     height: 2rem;
     display: flex;
-    justify-content: center; /* Centre l'image horizontalement */
-    align-items: center;
-
+    position: absolute;
+    top: 10vh;  /* Utilisation de vh pour qu'il soit proportionnel à la taille de l'écran */
+    left: 50%;
 }
+
+
+.cowboy {
+    width: 45rem;
+    height: 2rem;
+    display: flex;
+    position: absolute;
+    top: 10vh;  /* Utilisation de vh pour qu'il soit proportionnel à la taille de l'écran */
+    left: 50%;
+}
+
+
+.arbalette {
+    width: 45rem;
+    height: 2rem;
+    display: flex;
+    position: absolute;
+    top: 10vh;  /* Utilisation de vh pour qu'il soit proportionnel à la taille de l'écran */
+    left: 50%;
+}
+
+.lapin{
+    width: 18rem;
+    height: 5rem;
+    display: flex;
+    position: absolute;
+    top: 10vh;  /* Utilisation de vh pour qu'il soit proportionnel à la taille de l'écran */
+    left: 50%;
+}
+
+.louche {
+    width: 50rem;
+    height: 2rem;
+    display: flex;
+    position: absolute;
+    top: 10vh;  /* Utilisation de vh pour qu'il soit proportionnel à la taille de l'écran */
+    left: 50%;
+}
+
+.DeadGirls {
+    width: 30rem;
+    height: 2rem;
+    display: flex;
+    position: absolute;
+    top: 10vh;  /* Utilisation de vh pour qu'il soit proportionnel à la taille de l'écran */
+    left: 50%;
+}
+
+.cornelius {
+    width: 30rem;
+    height: 2rem;
+    display: flex;
+    position: absolute;
+    top: 10vh;  /* Utilisation de vh pour qu'il soit proportionnel à la taille de l'écran */
+    left: 50%;
+}
+
+
+.pigeon {
+    width: 30rem;
+    height: 2rem;
+    display: flex;
+    position: absolute;
+    top: 10vh;  /* Utilisation de vh pour qu'il soit proportionnel à la taille de l'écran */
+    left: 50%;
+}
+
+.main-verte {
+    width: 65rem;
+    height: 5rem;
+    display: flex;
+    position: absolute;
+    top: 10vh;  /* Utilisation de vh pour qu'il soit proportionnel à la taille de l'écran */
+    left: 50%;
+}
+.carpe {
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    position: absolute;
+    top: 10vh;  /* Utilisation de vh pour qu'il soit proportionnel à la taille de l'écran */
+    left: 50%;
+}
+
+/*images*/
 .image-hache {
     width: 70%;  /* L'image prend 80% de la largeur du conteneur */
     height: auto;
@@ -113,29 +215,11 @@ body {
     margin-top: 62rem;
     margin-left: 150rem;
 }
-
-.cowboy {
-    width: 45rem;
-    height: 2rem;
-    display: flex;
-    justify-content: center; /* Centre l'image horizontalement */
-    align-items: center;
-
-}
 .image-cowboy {
     width: 65%;  /* L'image prend 80% de la largeur du conteneur */
     height: auto;
     margin-top: 72rem;
     margin-left: 70rem;
-}
-
-.arbalette {
-    width: 45rem;
-    height: 2rem;
-    display: flex;
-    justify-content: center; /* Centre l'image horizontalement */
-    align-items: center;
-
 }
 .image-arbalette {
     width: 70%;  /* L'image prend 80% de la largeur du conteneur */
@@ -143,27 +227,13 @@ body {
     transform: rotate(45deg);
     margin-top: 72rem;
     margin-left: 35rem;
-}
-.lapin{
-    width: 18rem;
-    height: 5rem;
-    display: flex;
-    justify-content: center; /* Centre l'image horizontalement */
-    align-items: center;
-}
+
 .image-lapin {
     width: 50%;  /* L'image prend 80% de la largeur du conteneur */
     height: auto;
     margin-top: 150rem;
     margin-left: 187rem;
     transform: rotate(190deg);
-}
-.louche {
-    width: 50rem;
-    height: 2rem;
-    display: flex;
-    justify-content: center; /* Centre l'image horizontalement */
-    align-items: center;
 }
 .image-louche {
     width: 50%;  /* L'image prend 80% de la largeur du conteneur */
@@ -172,13 +242,6 @@ body {
     margin-top: 62rem;
     margin-left: 45rem;
 }
-.DeadGirls {
-    width: 30rem;
-    height: 2rem;
-    display: flex;
-    justify-content: center; /* Centre l'image horizontalement */
-    align-items: center;
-}
 .image-DeadGirls {
     width: 50%;  /* L'image prend 80% de la largeur du conteneur */
     height: auto;
@@ -186,27 +249,11 @@ body {
     margin-left: 177rem;
     margin-right: -5px;
 }
-
-.cornelius {
-    width: 30rem;
-    height: 2rem;
-    display: flex;
-    justify-content: center; /* Centre l'image horizontalement */
-    align-items: center;
-}
 .image-cornelius {
     width: 50%;  /* L'image prend 80% de la largeur du conteneur */
     height: auto;
     margin-top: 35rem;
     margin-left: 67rem;
-}
-
-.pigeon {
-    width: 30rem;
-    height: 2rem;
-    display: flex;
-    justify-content: center; /* Centre l'image horizontalement */
-    align-items: center;
 }
 .image-pigeon {
     width: 50%;  /* L'image prend 80% de la largeur du conteneur */
@@ -214,26 +261,11 @@ body {
     margin-top: 40rem;
     margin-left: 230rem;
 }
-.main-verte {
-    width: 65rem;
-    height: 5rem;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-}
 .image-main-verte {
     width: 50%;  /* L'image prend 80% de la largeur du conteneur */
     height: auto;
     margin-top: 70rem;
     margin-left: 60rem;
-}
-
-.carpe {
-    width: 50rem;
-    height: 5rem;
-    display: flex;
-    justify-content: center; /* Centre l'image horizontalement */
-    align-items: center;
 }
 .image-carpe {
     width: 50%;  
@@ -242,6 +274,7 @@ body {
     margin-left: 205rem;
     transform: rotate(90deg);
 }
+
 
     /*arrangements text*/
 .vertical-text {
@@ -259,19 +292,21 @@ a {
 .domino{
     font-size: 3rem;
     color:pink;
-    margin-top: 150rem;
+    margin-top: 10vh;
     display: inline-block; /* S'assurer que l'élément est en ligne avec l'image */
-    margin-left: 1rem; /* Un petit espace à gauche du texte */
+    margin-left: 2vw; /* Un petit espace à gauche du texte */
     white-space: nowrap;
 }
 
 /* conteneurS */
-.egg {
-    width: 35rem;
-    height: 1rem;
+.image-hache, .image-cowboy, .image-arbalette, .image-lapin, .image-louche {
     display: flex;
-    justify-content: center; /* Centre l'image horizontalement */
+    justify-content: center;
     align-items: center;
+    width: 100%;  /* Largeur maximale */
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 .image-egg {
     width: 70%;  
@@ -281,12 +316,6 @@ a {
 .image-ressort {
     position: absolute;
     margin-top: -10rem;
-}
-.tiroir {
-    width: 30rem;
-    height: 1rem;
-    display: flex;
-
 }
 .image-tiroir {
     width: 20%;
@@ -365,33 +394,18 @@ h3{
 
 
 /*construction spirale*/
-
-#spiral-container {
-    position: relative;
-    width: 50rem;
-    height: 50rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0.1rem solid white;
-    border-radius: 30%;
-}
-
-
-/* Animation pour créer l'effet de spirale */
 #spiral-container {
     position: absolute;
     left: 50%;
-    transform: translate(-70%,10%);
-    width: 60rem;
-    height: 60rem;
+    transform: translate(-50%, 10%);
+    width: 60vw;  /* Utilisation de vw pour que le conteneur prenne une proportion de la largeur */
+    height: 60vw; /* Garder la même proportion pour une forme ronde */
     display: flex;
     justify-content: center;
     align-items: center;
     border: 0.1rem solid white;
     border-radius: 50%;
 }
-
 
 .spiral-image {
     position: absolute;
