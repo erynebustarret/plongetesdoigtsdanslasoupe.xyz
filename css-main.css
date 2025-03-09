@@ -16,7 +16,6 @@ body {
     background-position: center;
     animation: grow 70s linear 0s infinite;
     transition: background 3s ease-in-out;
-    position: relative;
 }
 
 /* Media query */
