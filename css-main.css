@@ -310,18 +310,19 @@ a {
     align-items: center;
 }
 .image-egg {
-    width: 70%;  
+    width: 50%;  
     height: auto;
     margin-left: 60px;
+    margin-top: 100px;
 }
 .image-ressort {
     position: absolute;
-    margin-top: -100px;
+    margin-top: 100px;
 }
 .image-tiroir {
     width: 20%;
     position: absolute;
-    margin-top: -200px;
+    margin-top: 100px;
     margin-left: 100px;
     transform: perspective(2%);
 }
@@ -396,12 +397,25 @@ h3{
 
 /*construction spirale*/
 #spiral-container {
-    position: relative; /*ou absolute*/
+    position: relative;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+
+/* Animation pour créer l'effet de spirale */
+#spiral-container {
+    position: absolute;
     left: 50%;
-    transform: translate(-70%, 10%);
-    width: 60vw;  /* 600px */
-    height: 60vw; /* 600px */
-    display:flex;
+    transform: translate(-70%,10%);
+    width: 600px;
+    height: 600px;
+    display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid white;
