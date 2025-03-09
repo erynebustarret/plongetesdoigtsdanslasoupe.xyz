@@ -284,12 +284,12 @@ body {
     color: white;  /* Couleur du texte */
 }
 a {
-    font-size: 1rem;
+    font-size: 10px;
     text-decoration: none;
     color: white;
 }
 .domino{
-    font-size: 3rem;
+    font-size: 20px;
     color:pink;
     margin-top: 10vh;
     display: inline-block; /* S'assurer que l'élément est en ligne avec l'image */
@@ -398,8 +398,7 @@ h3{
     left: 50%;
     transform: translate(-50%, 10%);
     width: 60vw;  /* Utilisation de vw pour que le conteneur prenne une proportion de la largeur */
-    height: 60vw; /* Garder la même proportion pour une forme ronde */
-    display: flex;
+    height: 60vw; 
     justify-content: center;
     align-items: center;
     border: 0.1rem solid white;
