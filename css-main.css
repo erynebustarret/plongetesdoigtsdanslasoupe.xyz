@@ -437,43 +437,43 @@ h3{
 
 /* Spirale : Positionnement des images */
 #spiral-container .spiral-image:nth-child(1) {
-    transform: rotate(19deg) translateX(14.5rem) translateZ(10rem) rotate(-60deg) scale(0.05);
+    transform: rotate(19deg) translateX(7.57vw) translateZ(10rem) rotate(-60deg) scale(0.05);
     background-image: url('image1.jpg');
 }
 #spiral-container .spiral-image:nth-child(2) {
-    transform: rotate(30deg) translateX(9rem) translateZ(10rem) rotate(190deg) scale(0.1);
+    transform: rotate(30deg) translateX(9.38vw) translateZ(10rem) rotate(190deg) scale(0.1);
     background-image: url('image2.jpg');
 }
 #spiral-container .spiral-image:nth-child(3) {
-    transform: rotate(60deg) translateX(25rem) translateZ(10rem) rotate(-80deg) scale(0.05);
+    transform: rotate(60deg) translateX(25vw) translateZ(10rem) rotate(-80deg) scale(0.05);
     background-image: url('image3.jpg');
 }
 #spiral-container .spiral-image:nth-child(4) {
-    transform: rotate(90deg) translateX(21rem) translateZ(10rem) rotate(-90deg) scale(0.05);
+    transform: rotate(90deg) translateX(21vw) translateZ(10rem) rotate(-90deg) scale(0.05);
     background-image: url('image4.jpg');
 }
 #spiral-container .spiral-image:nth-child(5) {
-    transform: rotate(95deg) translateX(17rem) translateZ(10rem) translateY(-15rem) rotate(-100deg) scale(0.05);
+    transform: rotate(95deg) translateX(17vw) translateZ(10rem) translateY(-10.42vh) rotate(-100deg) scale(0.05);
     background-image: url('image1.jpg');
 }
 #spiral-container .spiral-image:nth-child(6) {
-    transform: rotate(150deg) translateX(16rem) translateZ(10rem) rotate(-150deg) scale(0.3);
+    transform: rotate(150deg) translateX(16vw) translateZ(10rem) rotate(-150deg) scale(0.3);
     background-image: url('image2.jpg');
 }
 #spiral-container .spiral-image:nth-child(7) {
-    transform: rotate(-40deg) translateX(-35rem)  translateZ(10rem) trasnlateX(-30rem) rotate(-180deg) scale(0.05);
+    transform: rotate(-40deg) translateX(-35vw) translateZ(10rem) translateX(-30vw) rotate(-180deg) scale(0.05);
     background-image: url('image3.jpg');
 }
 #spiral-container .spiral-image:nth-child(8) {
-    transform: rotate(210deg) translateX(19rem) translateY(10rem) rotate(-210deg) scale(0.2);
+    transform: rotate(210deg) translateX(19vw) translateY(10.42vh) rotate(-210deg) scale(0.2);
     background-image: url('image4.jpg');
 }
 #spiral-container .spiral-image:nth-child(9) {
-    transform: rotate(240deg) translateX(21rem) translateY(10rem) rotate(-240deg) scale(0.1);
+    transform: rotate(240deg) translateX(21vw) translateY(10.42vh) rotate(-240deg) scale(0.1);
     background-image: url('image1.jpg');
 }
 #spiral-container .spiral-image:nth-child(10) {
-    transform: rotate(0deg) translateX(3rem) translateZ(10rem) translateY(-30rem) rotate(-270deg) scale(0.05);
+    transform: rotate(0deg) translateX(3.75vw) translateZ(10rem) translateY(-30.42vh) rotate(-270deg) scale(0.05);
     background-image: url('image2.jpg');
 }
 
