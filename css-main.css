@@ -522,3 +522,26 @@ h3{
 ::selection {background:#55555b;}
 
 
+.filter-list{
+    margin-top: var(--headerH);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.filter-list button{
+    cursor: pointer;
+    margin-bottom: 2px;
+    border:none;
+    background: #eee;
+    padding:calc(var(--p)/4);
+    text-decoration: none;
+}
+.filter-list button:hover{
+    background: lightgray;
+}
+
+.filter-list {
+    font-size: 30px;  /* Taille du point d'interrogation */
+}
+
