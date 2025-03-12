@@ -68,21 +68,6 @@ body {
     margin: 0; 
 }
 
-??????????????????????????????????
-.image-hache,
-.image-cowboy,
-.image-arbalette,
-.image-lapin,
-.image-louche,
-.image-DeadGirls,
-.image-cornelius,
-.image-pigeon,
-.image-main-verte,
-.image-carpe {
-    width: 50%;
-    height: auto;
-    max-width: 100%; /* S'assure que l'image ne dépasse jamais 100% de sa largeur */
-}
 
 .cercle {
     width: 100px;
