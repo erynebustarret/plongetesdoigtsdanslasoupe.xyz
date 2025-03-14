@@ -20,7 +20,7 @@ body {
 }
 
 .hidden-image-to-show {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     opacity: 0;  /* Rendre l'image transparente au départ */
@@ -70,7 +70,7 @@ body {
     height: 100px;
     border: 1px solid white;
     border-radius: 50%;
-    position: absolute;
+    position: relative;
     top: 10vh;  /*-350px */
     left: 50%;  /*1300px */
     transform: translateX(-50%);  /* ??? */
@@ -81,7 +81,7 @@ body {
     width: 450px;
     height: 20px;
     display: flex;
-    position: absolute; /* ??? */
+    position: relative; /* ??? */
     align-items: center;
     justify-content: center;
     top: 10vh;  
@@ -93,7 +93,7 @@ body {
     width: 450px;
     height: 20px;
     display: flex;
-    position: absolute;  /* ??? */
+    position: relative;  /* ??? */
     align-items: center;
     justify-content: center;
     top: 10vh;  /* 720px */
@@ -105,7 +105,7 @@ body {
     width: 450px;
     height: 20px;
     display: flex;
-    position: absolute;  /* ??? */
+    position: relative;  /* ??? */
     align-items: center;
     justify-content: center;
     top: 10vh;  /* 720px */
@@ -116,7 +116,7 @@ body {
     width: 180px;
     height: 50px;
     display: flex;
-    position: absolute;  /* ??? */
+    position: relative;  /* ??? */
     align-items: center;
     justify-content: center;
     top: 10vh;  /* 1500px */
@@ -128,7 +128,7 @@ body {
     width: 500px;
     height: 20px;
     display: flex;
-    position: absolute;     /* ??? */ 
+    position: relative;     /* ??? */ 
     align-items: center;
     justify-content: center;
     top: 10vh;  /* 620px */
@@ -140,7 +140,7 @@ body {
     width: 300px;
     height: 20px;
     display: flex;
-    position: absolute;  /* ??? */
+    position: relative;  /* ??? */
     align-items: center;
     justify-content: center;
     top: 10vh;  /* 720px */
@@ -152,7 +152,7 @@ body {
     width: 300px;
     height: 20px;
     display: flex;
-    position: absolute;      /* ??? */
+    position: relative;      /* ??? */
     align-items: center;
     justify-content: center;
     top: 10vh;  /* 350px */
@@ -164,7 +164,7 @@ body {
     width: 300px;
     height: 20px;
     display: flex;
-    position: absolute;  /* ??? */
+    position: relative;  /* ??? */
     align-items: center;
     justify-content: center;
     top: 10vh;  /* 400px */
@@ -175,7 +175,7 @@ body {
     width: 650px;
     height: 50px;
     display: flex;
-    position: absolute;      /* ??? */
+    position: relative;      /* ??? */
     align-items: center;
     justify-content: center;
     top: 10vh;  /* 700px */
@@ -185,7 +185,7 @@ body {
     width: 500px;
     height: 50px;
     display: flex;
-    position: absolute;  /* ??? */
+    position: relative;  /* ??? */
     align-items: center;
     justify-content: center;
     top: 10vh;  /* 1100px */
@@ -297,12 +297,12 @@ a {
     margin-top: 100px;
 }
 .image-ressort {
-    position: absolute;
+    position: relative;
     margin-top: 100px;
 }
 .image-tiroir {
     width: 20%;
-    position: absolute;
+    position: relative;
     margin-top: 100px;
     margin-left: 100px;
     transform: perspective(2%);
@@ -336,7 +336,7 @@ a {
 
 .explanation-content{
     display: none;
-    position: absolute;
+    position: relative;
     bottom: 50px;
     right: 0;
     background-color: transparent;
@@ -362,7 +362,7 @@ h1,p{
 h2{
     font-size: 13px;
     font-style: thin;
-    position: absolute;
+    position: relative;
     margin-top: 200px;
     margin-left: 500px;
 }
