@@ -463,9 +463,9 @@ h2{
 #text-container {
     font-size: 240px;
     line-height: 1.5;
-    color: #333;
+    color: white;
     white-space: nowrap;
-    margin:5px
+    margin:5px;
 }
 
 #text {
