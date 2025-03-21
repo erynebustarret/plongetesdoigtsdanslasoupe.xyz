@@ -9,3 +9,60 @@ spiralImages.forEach(image => {
         image.style.backgroundImage = newImage;
     });
 });
+
+
+<div id="pdf-viewer"></div>
+  <div class="nav-buttons">
+    <button id="prev">Précédent</button>
+    <button id="next">Suivant</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+  <script>
+    const pdfViewer = document.getElementById('pdf-viewer');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+
+    let pdfDoc = null;
+    let currentPage = 1;
+    let totalPages = 0;
+
+    const loadPDF = (url) => {
+      pdfjsLib.getDocument(url).promise.then(pdf => {
+        pdfDoc = pdf;
+        totalPages = pdf.numPages;
+        renderPage(currentPage);
+      });
+    };
+
+    const renderPage = (pageNum) => {
+      pdfDoc.getPage(pageNum).then(page => {
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        const viewport = page.getViewport({ scale: 1 });
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        pdfViewer.innerHTML = ''; // Clear previous page
+        pdfViewer.appendChild(canvas);
+
+        page.render({ canvasContext: ctx, viewport: viewport }).promise;
+      });
+    };
+
+    prevButton.addEventListener('click', () => {
+      if (currentPage > 1) {
+        currentPage--;
+        renderPage(currentPage);
+      }
+    });
+
+    nextButton.addEventListener('click', () => {
+      if (currentPage < totalPages) {
+        currentPage++;
+        renderPage(currentPage);
+      }
+    });
+
+    // Charger ton premier PDF
+    loadPDF('votre-fichier1.pdf');
