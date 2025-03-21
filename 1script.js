@@ -66,3 +66,33 @@ spiralImages.forEach(image => {
 
     // Charger ton premier PDF
     loadPDF('votre-fichier1.pdf');
+
+const pdfFiles = ['fichier1.pdf', 'fichier2.pdf', 'fichier3.pdf'];  // Liste des fichiers PDF
+let currentPDFIndex = 0;
+
+const loadPDF = (index) => {
+  const url = pdfFiles[index];
+  pdfjsLib.getDocument(url).promise.then(pdf => {
+    pdfDoc = pdf;
+    totalPages = pdf.numPages;
+    currentPage = 1;  // Réinitialiser à la première page du nouveau PDF
+    renderPage(currentPage);
+  });
+};
+
+prevButton.addEventListener('click', () => {
+  if (currentPDFIndex > 0) {
+    currentPDFIndex--;
+    loadPDF(currentPDFIndex);
+  }
+});
+
+nextButton.addEventListener('click', () => {
+  if (currentPDFIndex < pdfFiles.length - 1) {
+    currentPDFIndex++;
+    loadPDF(currentPDFIndex);
+  }
+});
+
+loadPDF(currentPDFIndex);  // Charger le premier fichier PDF au démarrage
+
