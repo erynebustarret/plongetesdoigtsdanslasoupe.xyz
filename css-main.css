@@ -486,13 +486,14 @@ h2{
 .filter-list button{
     cursor: pointer;
     margin-bottom: 2px;
-    border:none;
-    background: #eee;
+    border:white 1px;
+    background: none;
     padding:calc(var(--p)/4);
     text-decoration: none;
 }
 .filter-list button:hover{
-    background: lightgray;
+    background: white;
+    color-font: black;
 }
 
 .filter-list {
