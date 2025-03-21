@@ -498,3 +498,17 @@ h2{
 .filter-list {
     font-size: 30px;  /* Taille du point d'interrogation */
 }
+
+#pdf-viewer {
+    width: 80%;
+    height: 80%;
+}
+.nav-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
