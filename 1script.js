@@ -67,7 +67,7 @@ spiralImages.forEach(image => {
     // Charger ton premier PDF
     loadPDF('votre-fichier1.pdf');
 
-const pdfFiles = ['fichier1.pdf', 'fichier2.pdf', 'fichier3.pdf'];  // Liste des fichiers PDF
+const pdfFiles = ['fichier1.pdf', 'fichier2.pdf', 'fichier3.pdf', 'fichier4.pdf', 'fichier5.pdf', 'fichier6.pdf'];  // Liste des fichiers PDF
 let currentPDFIndex = 0;
 
 const loadPDF = (index) => {
