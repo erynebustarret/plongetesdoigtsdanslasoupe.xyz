@@ -333,8 +333,8 @@ h2{
     margin-top: 200px;
     margin-left: 500px;
 }
-h3{
-    font-size: 13px;
+h3,h4{
+    font-size: 25px;
     padding: 15px;
 
 }
