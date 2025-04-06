@@ -484,9 +484,8 @@ h5{
 
 
 .filter-list{
-    margin-top: var(--headerH);
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -495,7 +494,6 @@ h5{
     margin-bottom: 2px;
     border:white 1px;
     background: none;
-    padding: calc(var(--p)/4);
     text-decoration: none;
 }
 .filter-list button:hover{
