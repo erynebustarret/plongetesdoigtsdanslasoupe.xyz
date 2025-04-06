@@ -338,6 +338,10 @@ h3,h4{
     padding: 15px;
 
 }
+
+h5{
+    color: rgb(133, 133, 133);
+}
 .explanation-box.open .explanation-content {
     display: block;
 }
@@ -469,7 +473,7 @@ h3,h4{
     line-height: 1.5;
     color: white;
     white-space: nowrap;
-    margin:5px;
+    margin: 5px;
 }
 
 #text {
@@ -491,16 +495,17 @@ h3,h4{
     margin-bottom: 2px;
     border:white 1px;
     background: none;
-    padding:calc(var(--p)/4);
+    padding: calc(var(--p)/4);
     text-decoration: none;
 }
 .filter-list button:hover{
     background: white;
     color-font: black;
+    font-size: 150px;
 }
 
 .filter-list {
-    font-size: 30px;  /* Taille du point d'interrogation */
+    font-size: 100px;  /* Taille du point d'interrogation */
 }
 
 #pdf-viewer {
